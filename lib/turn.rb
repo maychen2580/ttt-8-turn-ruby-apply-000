@@ -11,9 +11,7 @@ def input_to_index(user_input)
   user_input.to_i-1
 end
 
- def place_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
-end
+ 
 
 def valid_move?(board, index)
   if index.between?(0,8) && !place_taken?(board, index)
@@ -36,4 +34,7 @@ def turn(board)
   end
  end
  
+ def place_taken?(board, index)
+  !(board[index].nil? || board[index] == " ")
+end
  
