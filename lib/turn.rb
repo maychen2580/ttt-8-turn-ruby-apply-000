@@ -16,7 +16,7 @@ def move(board, index, current_player="X")
   board[index] = current_player
 end
   
-#return true of false 
+#check validation
 def valid_move?(board, index)
   if index.between?(0,8) && !place_taken?(board, index)
   true
