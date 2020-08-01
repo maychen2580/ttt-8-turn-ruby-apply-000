@@ -27,7 +27,7 @@ end
 
 def place_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
-en
+end
 
 def turn(board)
   puts "Please enter 1–9: "
@@ -41,7 +41,7 @@ def turn(board)
   end
  end
  
- d
+ 
 
 
  
