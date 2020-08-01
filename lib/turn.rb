@@ -26,6 +26,7 @@ def valid_move?(board, index)
  end
 end
 
+
 def place_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
